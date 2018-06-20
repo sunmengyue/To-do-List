@@ -24,3 +24,8 @@ $("input[type = 'text']").on("keypress", function(event){
 		$("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>");
 	}
 })
+
+//Toggle the Pencil Icon
+$(".fa-pencil-alt").click(function(){
+	$("input[type = 'text']").fadeToggle();
+})
