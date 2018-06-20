@@ -21,6 +21,6 @@ $("input[type = 'text']").on("keypress", function(event){
 		$(this).val("");
 		//create a new li and add to ul;
 		console.log($(this).val());
-		$("ul").append("<li><span>X</span> " + todoText + "</li>");
+		$("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>");
 	}
 })
